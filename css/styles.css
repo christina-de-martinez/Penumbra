@@ -19,6 +19,26 @@ h2 {
   color: #262422;
 }
 
+.inline-link{
+  font-family: 'Playfair Display', serif;
+  color: #262422;
+  font-size: 1.5rem;
+}
+
+.inline-link:hover {
+  color: #8F8D87;
+}
+
+.inline-link-footer {
+  font-family: 'Playfair Display', serif;
+  color: #262422;
+  font-size: 12px;
+}
+
+.inline-link-footer:hover {
+  color: #FEFAE0;
+}
+
 
 /* NAVBAR */
 nav {
@@ -29,6 +49,10 @@ nav {
   top: 0px;
   width: 100%;
   z-index: 1;
+}
+
+#logo {
+  max-height: 40px;
 }
 
 .bignav {
@@ -102,6 +126,11 @@ a:hover, a:active {
   justify-content: space-between;
 }
 
+.column {
+  flex-direction: column;
+  align-items: center;
+}
+
 .text {
   max-width: 50%;
 }
@@ -125,7 +154,7 @@ img {
 
 /* FOOTER */
 footer {
-  height: 50px;
+
   background-color: #8F8D87;
 }
 
