@@ -23,6 +23,10 @@ h2 {
   color: #262422;
 }
 
+.thanks {
+  font-size: 16px;
+}
+
 .inline-link{
   font-family: 'Playfair Display', serif;
   color: #262422;
@@ -171,6 +175,10 @@ img {
 
 input {
   margin-bottom: 10px;
+}
+
+.high {
+  min-height: 350px;
 }
 
 /* FOOTER */
