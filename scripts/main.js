@@ -1,17 +1,19 @@
 $(document).ready(function() {
 
-  $(".item").hover(function(){
-    $(this).css("background-color","#E0552F;");
-  }, function(){
-    $(this).css("background-color","#8F8D87");
-  });
+  scrollFunction();
+
+//  $(".item").hover(function(){
+//    $(this).css("background-color","#E0552F;");
+//  }, function(){
+//    $(this).css("background-color","#8F8D87");
+//  });
 
   window.onscroll = function(){
     scrollFunction();
   };
 
   function scrollFunction() {
-    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    if (document.body.scrollTop >= 120 || document.documentElement.scrollTop >= 120) {
       document.getElementById("navbar").className = "smallnav";
       document.getElementsByClassName("item").className = "smallitem";
       $(".item").hover(function(){
@@ -32,12 +34,7 @@ $(document).ready(function() {
   }
 
 
-  var mymap = L.map('mapid').setView([37.78, -122.46], 13);
-  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(mymap);
-  var marker = L.marker([37.78, -122.46]).addTo(mymap);
-  marker.bindPopup('Mr. Penumbra\'s 24-Hour Bookstore').openPopup();
+
 
 //  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 //    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',

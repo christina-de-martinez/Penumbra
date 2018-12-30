@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* TYPOGRAPHY */
 h1 {
   color: #EAE9E3 !important;
@@ -37,6 +41,19 @@ h2 {
 
 .inline-link-footer:hover {
   color: #FEFAE0;
+}
+
+.warning {
+  font-size: 10px;
+  text-align: center;
+}
+
+.form {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-left: 5px;
 }
 
 
@@ -150,6 +167,10 @@ img {
   height: 250px;
   width: 350px;
   border: 2px solid black;
+}
+
+input {
+  margin-bottom: 10px;
 }
 
 /* FOOTER */

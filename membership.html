@@ -12,17 +12,6 @@
    integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
    crossorigin=""></script>
     <link href="./css/styles.css" type="text/css" rel="stylesheet">
-    <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
-    <script type="text/javascript">
-      google.books.load();
-
-      function initialize() {
-        var viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
-        viewer.load('ISBN:0374708835');
-      }
-
-      google.books.setOnLoadCallback(initialize);
-    </script>
     <title></title>
   </head>
   <body>
@@ -37,19 +26,36 @@
       </div>
     </nav>
 
-<!-- <div class="mainpage">
-  <div class="container">
-    {% for book in booklist %}
-    <img src="http://covers.openlibrary.org/b/isbn/" + {{ ISBN }} + ""-M.jpg">
-    {% endfor %}
-  </div>
-</div> -->
 
 <div class="mainpage">
-  <div class="container column">
-      <h2>Our Story</h2><br />
-      <div id="viewerCanvas" style="width: 400px; height: 600px"></div>
+  <div class="container column" style="padding-bottom: 0px;">
+      <h2>Membership</h2>
+      <p>Interested in becoming a member of the Unbroken Spine? Submit your application below.</p>
+      <p class="warning"><strong>Warning: This form is not secure. Please do not submit any private or personally-identifiable information.</strong><br />The purpose of this form is only to display my ability to create custom forms using HTML.</p>
   </div>
+
+  <div class="container">
+    <form action="/submit-form">
+    <p class="form">What is your first name?</p><br />
+    <input type="text" placeholder="First name" required  style="width: 400px; margin-bottom: 30px;">
+    <br />
+    <p class="form">Select your favorite Harry Potter volume:</p> <br />
+      <input type="radio" id="vol1" name="hp" value="Sorcerer's Stone"><p class="form"> The Sorcerer's Stone </p><br />
+      <input type="radio" id="vol2" name="hp" value="Chamber of Secrets"><p class="form"> The Chamber of Secrets </p><br />
+      <input type="radio" id="vol3" name="hp" value="Prizoner of Azkaban"><p class="form"> The Prizoner of Azkaban </p><br />
+      <input type="radio" id="vol4" name="hp" value="Goblet of Fire"><p class="form"> The Goblet of Fire </p><br />
+      <input type="radio" id="vol5" name="hp" value="Order of the Phoenix"><p class="form"> The Order of the Phoenix </p><br />
+      <input type="radio" id="vol6" name="hp" value="Half Blood Prince"><p class="form"> The Half Blood Prince </p><br />
+      <input type="radio" id="vol7" name="hp" value="Deathly Hallows"><p class="form"> The Deathly Hallows </p><br />
+    <br />
+    <p class="form">On a scale of 1-10, how much do you enjoy cracking complicated codes?</p>
+    <input type="range" name="points" min="0" max="10"><br />
+    <p class="form">Select your favorite color: </p><input type="color" name="favcolor"><br />
+    <center><input type="reset" style="margin-right: 20px; margin-top: 50px;"><button type="submit">Submit</button></center>
+    </form>
+  </div>
+
+
 </div>
 
 

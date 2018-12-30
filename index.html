@@ -16,15 +16,15 @@
   </head>
   <body>
 
-<nav id="navbar">
-  <div class="flex-container">
-    <a href="./index.html" alt=""><div class="item">Home</div></a>
-    <a href="./about.html" alt=""><div class="item">About</div></a>
-    <a href="#" alt=""><div class="item"><img src="./media/book.png" alt="Mr. Penumbra's Logo" id="logo"></div></a>
-    <a href="#" alt=""><div class="item">Membership</div></a>
-    <a href="https://www.robinsloan.com/" alt="Robin Sloan's Website"><div class="item" style="text-align: center;">More</div></a>
-  </div>
-</nav>
+  <nav id="navbar">
+    <div class="flex-container">
+      <a href="./index.html" alt="Home"><div class="item">Home</div></a>
+      <a href="./about.html" alt="About"><div class="item">About</div></a>
+      <a href="./index.html" alt="Home"><div class="item"><img src="./media/book.png" alt="Mr. Penumbra's Logo" id="logo"></div></a>
+      <a href="./membership.html" alt="Membership"><div class="item">Membership</div></a>
+      <a href="https://www.robinsloan.com/" alt="Robin Sloan's Website" onclick="alert('You are now leaving this site.');"><div class="item" style="text-align: center;">More</div></a>
+    </div>
+  </nav>
 
 <div class="jumbotron">
   <h1>Mr. Penumbra's <br />24-Hour Bookstore</h1>
@@ -87,6 +87,14 @@
   <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
   crossorigin=""></script>
+  <script type="text/javascript">
+    var mymap = L.map('mapid').setView([37.78, -122.46], 13);
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(mymap);
+    var marker = L.marker([37.78, -122.46]).addTo(mymap);
+    marker.bindPopup('Mr. Penumbra\'s 24-Hour Bookstore').openPopup();
+  </script>
   <script type="text/javascript" src="./scripts/main.js"></script>
   </body>
 </html>
