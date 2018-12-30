@@ -7,6 +7,7 @@ This project showcases these new skills:
   <li>Using JavaScript, rather than CSS, to control hover states</li>
   <li>Using Leaflet to display an interactive map on the homepage</li>
   <li>Using the Google Books API to display an ebook on the About page</li> 
+  <li>Using a window alert to let users know that they're leaving the site when they click "More" in the navbar</li>
 </ol>
 
 This project is available to view at https://christinahouck.github.io/Penumbra/
