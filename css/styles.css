@@ -1,5 +1,15 @@
 html {
   scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.page--container {
+  min-height: 80%;
+ background-color: #EAE9E3;
 }
 
 /* TYPOGRAPHY */
@@ -70,6 +80,7 @@ nav {
   top: 0px;
   width: 100%;
   z-index: 1;
+  height: 90px;
 }
 
 #navbar-mobile {
@@ -102,7 +113,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   max-width: 700px;
-  min-width: 500px;
+  width: 500px;
 }
 
 .item {
@@ -264,4 +275,21 @@ font-family: 'Crimson Text', serif; */
   }
 }
 
-/* At 610, change icons in nav bar or create mobile hamburger menu */
+@media only screen and (min-width: 410px) {
+  .flex-container {
+    max-width: 410px;
+    overflow: none;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 395px) {
+  i {
+    max-width: 10px;
+    max-height: auto;
+  }
+}
+
+@media only screen and (min-width: 325px) {
+
+}
